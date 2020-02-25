@@ -82,7 +82,7 @@ def sort_libraries_greedy(p=1):
 
     print()
     print('total score',score)
-    with open(filename+"_out.txt","w+") as f:
+    with open('hashcode2020_data/'+filename+"_out.txt","w+") as f:
         f.write(str(len(library_out))+"\n")
         for line in library_out:
             f.write(str(line[0])+" "+str(line[1])+"\n")
@@ -94,7 +94,7 @@ def sort_libraries_greedy(p=1):
 filename = "c_incunabula"
 file = filename+'.txt'
 
-with open(file, "r") as f:
+with open('hashcode2020_data/'+file, "r") as f:
     content = f.read().splitlines()
 print(file)
 B, L, D = list(map(int, content[0].split(' ')))
