@@ -1,0 +1,1 @@
+# Hashcode-2020-solution-Qualification-round
